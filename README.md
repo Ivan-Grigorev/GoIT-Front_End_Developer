@@ -1,1 +1,1 @@
-# GoIT_Front-End-Developer
+# GoIT - Front End Developer
