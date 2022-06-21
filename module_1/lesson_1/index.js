@@ -117,3 +117,76 @@ const height = Number.parseFloat ('1.75'.replace (', ','. '));
 const bmi = Number (weight / Math.pow (height, 2)). toFixed (1));
 
 console.log (bmi); // 28.8
+
+// =========================================== ===
+// Example 7 - Comparison operators and type reduction
+// What will be the result of the expressions?
+
+console.log (5> 4); // true
+console.log (10> = '7'); // true
+console.log ('2'> '12');
+console.log ('2' <'12');
+
+console.log ('4' == 4); // true
+console.log ('6' === 6); // false
+console.log ('false' === false); // false
+
+console.log (1 == true);
+console.log (1 === true);
+
+console.log ('0' == false); // true
+console.log ('0' === false);
+
+console.log ('Papaya' <'papaya');
+console.log ('Papaya' === 'papaya');
+
+console.log (undefined == null);
+console.log (undefined === null);
+
+// =========================================== ===
+// Example 8 - Logical operators
+// What will be the result of the expressions?
+
+console.log (true && 3);
+console.log (false && 3);
+console.log (true && 4 && 'kiwi');
+console.log (true && 0 && 'kiwi');
+console.log (true || 3);
+console.log (true || 3 || 4);
+console.log (true || false || 7);
+console.log (null || 2 || undefined);
+console.log (1 && null && 2)> 0);
+console.log (null || (2 && 3) || 4);
+
+// =========================================== ===
+// Example 9 - Default value and zero merge operator
+// Retractor the code so that the value of the variable incomingValue is assigned to the value variable if it is not undefined or null. Otherwise, the defaultValue value must be set. Check the script for the following values ​​of the incomingValue variable: null, undefined, 0, false. Use the operator ?? (nullish coalescing operator).
+
+const incomingValue = 0;
+const defaultValue = 10;
+const value1 = incomingValue || defaultValue; // 10
+const value2 = incomingValue ?? defaultValue; // 0
+
+console.log (value1);
+console.log (value2);
+
+// =========================================== ===
+// Example 10 - % operator and string methods
+// Write a script that will translate the value of totalMinutes (number of minutes) into a string in the format of hours and minutes HH: MM.
+
+// 70 will show 01:10
+// 450 will show 07:30
+// 1441 will show 24:01
+
+const totalMinutes = 65;
+
+const hours = Math.floor (totalMinutes / 60);
+const minutes = totalMinutes% 60;
+
+console.log (hours);
+console.log (minutes);
+
+const doubleDigitHours = String (hours) .padStart (2, 0);
+const doubleDigitMinutes = String (minutes) .padStart (2, 0);
+
+console.log (`$ {doubleDigitHours}: $ {doubleDigitMinutes}`);
