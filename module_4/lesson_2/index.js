@@ -74,7 +74,7 @@ const sum = numbers.reduce((acc, item) => (acc += item), 0);
 
 console.log(sum);
 
-====== reduce - min, max ======
+// ====== reduce - min, max ======
 const numbers = [3, 1, 2, 5, 4]; // 15
 
 let acc = numbers[0];
