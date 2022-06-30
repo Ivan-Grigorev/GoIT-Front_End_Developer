@@ -25,7 +25,7 @@ sayHello(fn1, fn2);
 sayHello(fn1, () => console.log('Bobby'));
 
 // ===== unique items =====
-// const numbers = [1, 3, 2, 1, 4, 2, 2, 1, 3, 5];
+const numbers = [1, 3, 2, 1, 4, 2, 2, 1, 3, 5];
 
 function getUniqueItems1(arr) {
   const res = [];
